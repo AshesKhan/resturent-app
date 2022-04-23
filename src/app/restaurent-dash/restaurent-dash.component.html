@@ -1,0 +1,103 @@
+<nav class="navbar navbar-light bg-primary">
+    <div class="container-fluid">
+        <h2 class="text-white">Restaurent Record App</h2>
+        <div class="d-flex">
+            <button class="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Add
+                Restaurent</button>
+        </div>
+    </div>
+</nav>
+<!--jumbotron-->
+
+<div class="jumbotron p-5 mb-4 bg-light rounded-3">
+    <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Restaurent Record management</h1>
+        <p class="lead col-md-8 fs-4">you can save Records of Restaurent Using Angular 13.</p>
+
+        <a class="btn btn-primary btn-lg" href="#" target="_blank" type="button">Learn more</a>
+    </div>
+</div>
+
+<!--Table shown here-->
+
+<table class="table mt-4">
+    <thead>
+        <tr class="text-center">
+            <th scope="col">Restaurent ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Mobile</th>
+            <th scope="col">Address</th>
+            <th scope="col">Service</th>
+            <th scope="col">Action</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="text-center" *ngFor="let data of allRestarantData">
+            <td>{{data.id}}</td>
+            <td>{{data.name}}</td>
+            <td>{{data.email}}</td>
+            <td>{{data.mobile}}</td>
+            <td>{{data.address}}</td>
+            <td>{{data.services}}</td>
+            
+            
+            <td>
+                <button (click)="onEditResto(data)" type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button>&nbsp;
+                <button (click)="deleteResto(data)" class="btn btn-danger">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Restaurent record Form </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form [formGroup]="formValue">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Name</label>
+                        <input type="text" formControlName="name" class="form-control" placeholder="Restaurent name here"
+                            id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email ID</label>
+                        <input type="email" formControlName="email" class="form-control" placeholder="Restaurent email id"
+                            id="exampleInputEmail1" aria-describedby="emailHelp">
+
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Mobile</label>
+                        <input type="email" formControlName="mobile" class="form-control" placeholder="Restaurent Mobile"
+                            id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Address</label>
+                        <input type="email" formControlName="address" class="form-control" placeholder="Restaurent Address"
+                            id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Services</label>
+                        <input type="email" formControlName="services" class="form-control" placeholder="Restaurent Service"
+                            id="exampleInputEmail1" aria-describedby="emailHelp">
+
+                    </div>
+                   
+
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="clear" class="btn btn-warning">Clear</button>
+                <button type="button" class="btn btn-primary" (click)="addResto()">Add details</button>
+                <button type="button" class="btn btn-primary" (click)="UpdateResto()">Update details</button>
+            </div>
+        </div>
+    </div>
+</div>

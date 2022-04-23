@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row pt-5">
+        <div class="col-md-6">
+            <img src="../../assets/image/Artboard 1 1.svg" class="img-fluid" alt="">
+        </div>
+        <div class="col-md-6">
+            <div class="card mt-2 p-5">
+                <div class="text-center">
+                    <h1>SignUp</h1>
+                    <h5>Get Free Membership</h5>
+                </div>
+                <form [formGroup]="signupForm" (ngSubmit)="signup()">
+                    <div class="mb-3">
+                        <label class="form-label">Name</label>
+                        <input formControlName="name" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div><div class="mb-3">
+                        <label  class="form-label">mobile</label>
+                        <input formControlName="mobile" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email address</label>
+                        <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Signup</button>
+                </form>
+                <a routerLink="/login">Login</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,98 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "id": 2,
+      "name": "ashes",
+      "email": "ashes.ash@gmail.com",
+      "mobile": "0321987624",
+      "address": "sadiqabad"
+    },
+    {
+      "id": 3,
+      "name": "dsfbdsb",
+      "email": "ashes.ash@gmail.com",
+      "mobile": "csa",
+      "address": "sadiqabad"
+    },
+    {
+      "id": 4,
+      "name": "salman",
+      "email": "ashes@gmail.com",
+      "mobile": "098723365",
+      "address": "i10"
+    },
+    {
+      "id": 5,
+      "name": "Abu Bakar",
+      "email": "ashes@gmail.com",
+      "mobile": "09876544332",
+      "address": "i10"
+    },
+    {
+      "id": 6,
+      "name": "ashes khan",
+      "email": "ashes.ash@gmail.com",
+      "mobile": "0321987624",
+      "address": "sadiqabad"
+    },
+    {
+      "id": 7,
+      "name": null,
+      "email": null,
+      "mobile": null,
+      "address": null
+    },
+    {
+      "id": 8,
+      "name": "",
+      "email": "",
+      "mobile": "",
+      "address": ""
+    }
+  ],
+  "signup": [
+    {
+      "name": "ashes khan",
+      "email": "ashes@gmail.com",
+      "mobile": "0776543433",
+      "password": "dfgryges",
+      "id": 1
+    },
+    {
+      "name": "ashes khan",
+      "email": "ashes.ashraf@gmail.com",
+      "mobile": "12345678",
+      "password": "12345678",
+      "id": 2
+    },
+    {
+      "name": "khan",
+      "email": "ashes.developer@gmail.com",
+      "mobile": "9876543",
+      "password": "123456",
+      "id": 3
+    },
+    {
+      "name": "ashes khan",
+      "email": "ashes.ash@gmail.com",
+      "mobile": "3245345346543",
+      "password": "123456",
+      "id": 4
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
