@@ -1,0 +1,214 @@
+/* You can add global styles to this file, and also import other style files */
+// font Family
+
+@font-face {
+  font-family: Montserrat-Light;
+  src: url("../../src/assets/Fonts/Montserrat-Light.ttf");
+}
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url("../../src/assets/Fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url("../../src/assets/Fonts/Montserrat-Medium.ttf");
+}
+@font-face {
+  font-family: Montserrat-SemiBold;
+  src: url("../../src/assets/Fonts/Montserrat-SemiBold.ttf");
+}
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url("../../src/assets/Fonts/Montserrat-Bold.ttf");
+}
+@font-face {
+  font-family: Montserrat-ExtraBold;
+  src: url("../../src/assets/Fonts/Montserrat-ExtraBold.ttf");
+}
+
+.montserrat-light {
+  font-family: Montserrat-Light;
+}
+.montserrat-regular {
+  font-family: Montserrat-Regular;
+}
+.montserrat-medium {
+  font-family: Montserrat-Medium;
+}
+.montserrat-semibold {
+  font-family: Montserrat-SemiBold;
+}
+.montserrat-bold {
+  font-family: Montserrat-Bold;
+}
+.montserrat-extrabold {
+  font-family: Montserrat-ExtraBold;
+}
+
+  //-----------------------------------------------//
+  $solidgreen:#18938D;
+  $mediumseagreen: #2cb764;
+  $orangered: #f6460f;
+  $gold: #ffd704;
+  $darkorange: #f6830f;
+  $darkcyan: #0e918c;
+  $skyblue: #61daeb;
+  $darkslategray: #1a202e;
+  $purple: #333e59;
+  $dodgerblue: #1694db;
+  $teal: #0e5a91;
+  $darkslategray: #424e68;
+  $crimson: #d30b0b;
+  $yellowgreen: #33bc03;
+  $tomato: #ff4b55;
+  $midnightblue: #23183d;
+  $moccasin: #ffefb7;
+  $light-orange: #fa7422;
+  $seablue: #0e918c;
+  $lavender: #e9e9e9;
+  $gainsboro: #e5e5e5;
+  $lightblack: #212529;
+  
+  // gradient
+  $mediumseagreen-gradient: linear-gradient(
+    90deg,
+    #2cb764 10.76%,
+    #0e918c 133.7%
+  );
+  $light-seagreen-gradient: linear-gradient(
+    92.09deg,
+    #2cb965 1.76%,
+    #32e37a 117.76%
+  );
+  $orangered-gradient: linear-gradient(92.09deg, #f6850f 1.76%, #f6b40f 117.76%);
+  $orangered-gradient: linear-gradient(92.41deg, #f6460f 0%, #fe2b5e 100%);
+  $seablue-gradient: linear-gradient(92.23deg, #0e918c 1.87%, #23e0d9 100%);
+  $purple-gradient: linear-gradient(91.34deg, #1a202e 0%, #333e59 100%);
+  // color Classes
+  
+  .solidgreen{
+    background: $solidgreen;
+  }
+  .bg-gainsboro {
+    background: $gainsboro;
+  }
+  .bg-mediumseagreen {
+    background: $mediumseagreen;
+  }
+  .bg-orangered {
+    background: $orangered;
+  }
+  .bg-gold {
+    background: $gold;
+  }
+  
+  .bg-darkorange {
+    background: $darkorange;
+  }
+  .bg-darkcyan {
+    background: $darkcyan;
+  }
+  .bg-skyblue {
+    background: $skyblue;
+  }
+  .bg-darkslategray {
+    background: $darkslategray;
+  }
+  
+  .bg-purple {
+    background: $purple;
+  }
+  .bg-dodgerblue {
+    background: $dodgerblue;
+  }
+  .bg-teal {
+    background: $teal;
+  }
+//   .bg-lightslategray {
+//     background: $lightslategray;
+//   }
+  
+  .bg-crimson {
+    background: $crimson;
+  }
+  .bg-yellowgreen {
+    background: $yellowgreen;
+  }
+  .bg-tomato {
+    background: $tomato;
+  }
+  .bg-midnightblue {
+    background: $midnightblue;
+  }
+  .bg-moccasin {
+    background: $moccasin;
+  }
+  .bg-light-orange {
+    background: $light-orange;
+  }
+  
+  .bg-seablue {
+    background: $seablue;
+  }
+  .bg-lavender {
+    background: $lavender;
+  }
+  .bg-lightblack {
+    background: $lightblack;
+  }
+  
+  // gradiebtclasses
+  
+  .bg-mediumseagreen-gradient {
+    background: $mediumseagreen-gradient;
+  }
+  .bg-light-seagreen-gradient {
+    background: $light-seagreen-gradient;
+  }
+  .bg-orangered-gradient {
+    background: $orangered-gradient;
+  }
+//   .bg-light-orangered-gradient {
+//     background: $lightorangered-gradient;
+//   }
+  
+  .bg-purple-gradient {
+    background: $purple-gradient;
+  }
+  .bg-seablue-gradient {
+    background: $seablue-gradient;
+  }
+  
+  //------------------------------------------------//
+  
+  // font-size
+  $fontsize-10: 10px;
+  $fontsize-12: 12px;
+  $fontsize-14: 14px;
+  $fontsize-16: 16px;
+  $fontsize-18: 18px;
+  $fontsize-24: 24px;
+  $fontsize-36: 36px;
+  
+  .fs-10 {
+    font-size: $fontsize-10;
+  }
+  .fs-12 {
+    font-size: $fontsize-12;
+  }
+  .fs-14 {
+    font-size: $fontsize-14;
+  }
+  .fs-16 {
+    font-size: $fontsize-16;
+  }
+  .fs-18 {
+    font-size: $fontsize-18;
+  }
+  .fs-24 {
+    font-size: $fontsize-24;
+  }
+  .fs-36 {
+    font-size: $fontsize-36;
+  }
+  //--------------------------------------------------//

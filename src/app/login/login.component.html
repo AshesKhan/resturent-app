@@ -1,31 +1,55 @@
-<div class="container">
-    <div class="row pt-5">
-        <div class="col-md-6">
-            <img src="../../assets/image/Artboard 1 1.svg" class="img-fluid" alt="">
+<div class="container-fluid">
+    <div class="row py-5">
+        <div class="col-md-12 col-lg-6">
+            <img src="../../assets/image/Artboard 1 1.svg" class="img-fluid rounded float-end" alt="">
         </div>
-        <div class="col-md-6">
-            <div class="card mt-5 p-5">
-                <div class="text-center">
-                    <h1>Login</h1>
-                    <h5>feel Free to login</h5>
+        <div class="col-md-12 col-lg-5 p-md-5">
+            <img src="../../assets/image/foster system logo-01 1.svg" class="img-fluid rounded mx-auto d-block  pb-5 " alt="">
+            
+            <div class="card p-lg-5 p-4">
+                <div class="text-center pb-2">
+                    <h1>Login<span><img src="../../assets/image/Group 4.svg" class="img-fluid rounded float-end pt-2 rounded-3" alt=""></span></h1>
                 </div>
-                <form [formGroup]="loginForm" (ngSubmit)="logIn()">
+                <form [formGroup]="loginForm" class="p-lg-5 p-sm-2" (ngSubmit)="logIn()">
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <!-- <label for="exampleInputEmail1" class="form-label">Email address</label> -->
+                        <input formControlName="email" type="email" placeholder="Email" class="form-control py-2" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
-                    <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input formControlName="password" type="password" class="form-control" id="exampleInputPassword1">
+                    <div class="mb-2">
+                        <!-- <label for="exampleInputPassword1" class="form-label">Password</label> -->
+                        <input formControlName="password" type="password" placeholder="password" class="form-control py-2" id="exampleInputPassword1">
                     </div>
-                    <div class="mb-3 form-check">
+                    
+                    <div class="forget-check py-4 form-check">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        <label class="form-check-label d-flex justify-content-between " for="exampleCheck1">Remember me<span><a routerLink="/signup" class="text-decoration-none ">Forgot Password ?</a></span></label>
                     </div>
-                    <button type="submit" class="btn btn-primary w-100">Signin</button>
+                    <button type="submit" class="btn btn-primary w-100 py-2 mb-3 rounded-3 solidgreen border-light">Login</button>
                 </form>
-                <a routerLink="/signup" class="mt-3">New User ? Signup</a>
+            
             </div>
         </div>
     </div>
+    <div class="footer-login row py-5 ">
+        <div class=" copyright col-lg-3 fs-12 align-items-center">
+            <p class="">Coppyright 2021 All rights reserved by<span class=""> Foster App</span></p>
+        </div>
+        <div class="col-lg-4">
+            <img src="../../assets/icon/Vector.svg" class="img-fluid ms-3" alt="">
+            <img src="../../assets/icon/Vector (1).svg" class="img-fluid ms-3" alt="">
+            <img src="../../assets/icon/Vector (2).svg" class="img-fluid ms-3" alt="">
+            <img src="../../assets/icon/Vector (3).svg" class="img-fluid ms-3" alt="">
+            <img src="../../assets/icon/Vector (4).svg" class="img-fluid ms-3" alt="">
+        </div>
+        <div class="col-lg-5 policy">
+            <ul class="d-flex fs-12">
+                <li class="ps-3 ">Cookie Policy </li>
+                <li class="ps-3">Privacy Policy</li>
+                <li class="ps-3">Terms & Concitions</li>
+                <li class="ps-3">Data Security</li>
+            </ul>
+        </div>
+    </div>
 </div>
+
+
